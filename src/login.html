@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e cadastro - Floricultura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/Login.css">
+</head>
+<body class="menu-body">
+
+    <div class="linha-vertical-lateral"></div>
+
+    <header class="cabeça-menu">
+        <div class="logo">
+            <h2 class="logo-texto">Logo</h2> 
+        </div>
+
+        <nav>
+            <ul class="menu-item">
+                <li><a href="./index.html" class="menu-function">Inicio</a></li>
+                <li><a href="#" class="menu-function">Catálogo</a></li>
+                <li><a href="#" class="menu-function">Buquê</a></li>
+            </ul>
+        </nav>
+
+        <div class="icon">
+            <img src="shopping_cart.png" class="carrinhoIcon">
+            <img src="login.png" class="loginIcon">   
+        </div>
+    </header>
+
+    <main id="section-login">
+        <div class="login-container">
+            <div class="login-left">
+                <div class="form-box">
+                    <h1 class="title-serif">Login</h1>
+                    <p class="subtitle-left">Faça login para fazer a sua encomenda.</p>
+
+                    <form>
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Exemplo@email.com" class="input-field input-email-focado">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="senha">Senha</label>
+                          
+                                <input id="senha" type="password" placeholder="************" class="input-field">
+
+                            <p class="password-esqueci">Esqueci minha senha</p>
+                        </div>
+
+                        <button type="button" class="btn-entrar" id="botaoLogin">ENTRAR</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bg-right">
+                <div class="register-content">
+                    <h2 class="title-serif">Cadastre-se</h2>
+                    <p class="subtitle-right">Faça login para fazer a sua encomenda.</p>
+                    <a href="./cadastrodadospessoais.html" type="button" class="btn-outline-cadastrar">CADASTRAR</a>
+                </div>
+                <img src="pngwing.com (2) 2.png" alt="Rosa" class="rose-img">
+            </div>
+        </div>
+    </main>
+    <script src="./script/login.js"> </script>
+</body>
+</html>

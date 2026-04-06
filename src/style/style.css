@@ -1,0 +1,246 @@
+
+/* Thaila */
+
+
+/* Nicole */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 120px;
+    padding-right: 5%;
+    overflow: hidden;
+}
+
+
+.left{
+    flex: 1;
+    max-width: 480px;
+    z-index: 5;
+}
+
+.left h1{ 
+    font-family: 'Cormorant Garamond', serif;
+    font-size:  64px;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.left p{
+    font-size: 16px;
+    color: #888;
+    line-height: 24px;
+    margin-bottom: 35px;
+    max-width: 380px;
+}
+
+.left button{
+    background: linear-gradient(90deg,#ff3d6d, #ff6a8b);
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255, 61, 129, 0.4);
+    transition: 0.3s ease;
+}
+
+.left button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(255, 61, 129, 0.5);
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.right img{
+    width: auto;
+    height: 90vh;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: -2%;
+    z-index: 4;
+}
+
+.bg-rosa{
+    position: absolute;
+    right: -9%;
+    bottom: -32%;
+    width: 40%; 
+    height: 60vh;
+
+    background: linear-gradient(180deg, rgba(255, 58, 58, 0.37) 0%, rgba(153, 35, 35, 0.00) 100%);
+    filter: blur(82px);
+    z-index: 1;
+
+}
+
+.linha-lateral{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #f0f0f0;
+    background: #fff;
+    z-index: 200;
+}
+
+.linha-lateral span{
+    transform: rotate(-90deg);
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .hero {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px 50px 20px; 
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left {
+        max-width: 100%;
+        margin-bottom: 40px; 
+        margin-right: 0;     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left h1 {
+        font-size: clamp(32px, 8vw, 56px);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;     
+        height: auto;
+    }
+
+    
+    .right img {
+        position: relative; 
+        right: 7.5%;        
+        bottom: auto;       
+        left: auto;         
+        object-fit: contain;
+    
+        height: auto;
+        width: 300%;        
+        max-width: 450px;   
+        
+        margin: 0 auto;     
+        transform: none;    
+    }
+
+    .bg-rosa {
+        position: absolute;
+    right: 28%;
+    bottom: -15%;
+    width: 40%; 
+    height: 60vh;
+    top: auto;
+        
+    .linha-lateral {
+        display: none;
+    }
+    .email{
+    }
+    .senha{
+
+
+    }
+
+}
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    .linha-lateral {
+        display: none !important;
+    }
+
+    .hero {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+
+    .right img {
+        position: relative;
+        right: 7.5%;
+        bottom: auto;
+        
+        width: 95%;          
+        max-width: 600px;    
+        height: 60vh;       
+        
+        object-fit: contain; 
+        transform: scale(1.1); 
+    }
+}
+
+/* Ajuste para celulares (tela pequenas) */
+@media screen and (max-width: 480px) {
+    .right img {
+        height: 50vh; 
+        width: 100%;
+        transform: scale(1);
+    }
+}

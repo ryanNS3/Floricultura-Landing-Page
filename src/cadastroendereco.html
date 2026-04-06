@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-endereço </title>
+      <link rel="stylesheet" href="./style/cadastresedados.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/menu.css">
+</head>
+
+<body class="bodyCadastreseDados" id="bodyCadastreseDados">
+    <header class="cabeca-menu">
+        <div class="logo">
+            <h2 class="logo-texto">Logo</h2> 
+        </div>
+
+        <nav>
+            <ul class="menu-item">
+                <li><a href="./index.html" class="menu-function active">Inicio</a></li>
+                <li><a href="#" class="menu-function">Catálogo</a></li>
+                <li><a href="#" class="menu-function">Buquê</a></li>
+            </ul>
+        </nav>
+
+        <div class="icon">
+         <img src="shopping_cart.png" class="menu-function active carrinhoIcon">
+
+            <a href="./login.html">
+                <img src="login.png" class="menu-function active loginIcon">
+            </a>
+
+        </div>
+    </header>
+   <div>
+    
+    <h1 class = "cadastrese" id="cadastrese">Cadastre-se</h1>
+    <p class=" subtituloCadastro" id = "subtitulo">Faça login para fazer a sua encomenda</p>
+    <img  class = "rosacadastro" id = "rosacadastro" src="rosacadastro.png" alt="rosacadastro">
+    
+    <form id="formularioCadastroEtapaTres"> 
+        <label for ="cepUsuarioDigitar" class="cepUsuario" id="cepUsuario">CEP</label>
+        <input id="cepUsuarioDigitar" class="cepUsuarioDigitar" type="text" placeholder="00000-000">
+    
+        <div class="linhaEndereco">
+        <div class="ncLinha">
+
+        <label for="numeroEnderecoDigitar" class="numeroEndereco" id="numeroEndereco">Número</label>
+        <input id="numeroEnderecoDigitar" class="numeroEnderecoDigitar" type="text" placeholder="ex: 100">
+        </div>
+
+        <div class="ncLinha">
+        <label for="complementoEnderecoDigitar" class="complementoEndereco" id="complementoEndereco">Complemento</label>
+        <input id="complementoEnderecoDigitar" class="complementoEnderecoDigitar" type="text" placeholder="ex: apartamento 6 bloco 3">
+        </div>
+        </div>
+
+        <h3 class="preenchimentoManual" id="preenchimentoManual">Preenchimento manual</h3>
+
+        <div class="linhaEndereco2">
+        <div class="ncLinha2">
+        <label for="estadoEnderecoDigitar" class="estadoEndereco" id="estadoEndereco">Estado</label>
+        <select id="estadoEnderecoDigitar" class="estadoEnderecoDigitar">
+            <option value="">Selecione seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>                 
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+
+        </select>
+        </div>
+
+        <div class="ncLinha2">
+        <label for="cidadeEnderecoDigitar" class="cidadeEndereco" id="cidadeEndereco">Cidade</label>
+        <input id="cidadeEnderecoDigitar" class="cidadeEnderecoDigitar" type="text" placeholder="São Paulo">
+        </div>
+        </div>
+
+        <label for="ruaLogradouroDigitar" class="ruaLogradouro" id="ruaLogradouro">Logradouro</label>
+        <input id="ruaLogradouroDigitar" class="ruaLogradouroDigitar" type="text" placeholder="Naçoes Unidas">
+
+        <button class="buttonContinuar" type="submit">Continuar</button>
+    </form>
+    </div>
+<script src="./script/cadastro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif; 
+}
+
+
+.cadastro-concluido {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.tela-sucesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;   
+    flex-grow: 1;             
+}
+
+
+.circulo-rosa {
+    width: 224px;
+    height: 224px;
+    background-color: #FF398F;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 30px; 
+}
+
+
+.icone-check {
+    width: 130px; 
+    height: auto;
+}
+
+.concluido {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}

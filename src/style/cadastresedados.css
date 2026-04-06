@@ -1,0 +1,357 @@
+.bodyCadastreseDados {
+background-color: #FFE9F3;
+    margin-left: 370px;
+    width: 500px; 
+    gap: 25px; 
+}
+
+.cadastrese { 
+margin-top: 238px;
+margin-bottom: 16px;
+width: 314px;
+color: var(--rose-800, #4B0222);
+font-family: "Cormorant Garamond";
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 76.8px; 
+letter-spacing: 1.28px;
+
+}
+
+.subtituloCadastro {
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: normal;
+margin-bottom: 20px;
+letter-spacing: 0.8px;
+}
+
+.cepUsuario {
+display: block;
+margin-bottom: 16px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 126.671px;
+}
+
+.cepUsuarioDigitar {
+    width: 700px;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    border: 1.5px solid #D70862; 
+    border-radius: 10px; 
+    background-color: transparent;
+    color: #D70862;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: var(--rose-700, #84053C);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cepUsuarioDigitar::placeholder {
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.cepUsuarioDigitar:focus {
+outline: none;
+border-color: #84053C;;
+}
+
+.numeroEndereco {
+display: flex;
+gap: 16px;
+margin-bottom: 16px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 126.671px;
+
+}
+
+.numeroEnderecoDigitar {
+width: 340px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1.5px solid #D70862; 
+border-radius: 10px; 
+background-color: transparent;
+color: #D70862;
+box-sizing: border-box;
+font-family: 'Montserrat';
+color: var(--rose-700, #84053C);
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+}
+
+.numeroEnderecoDigitar::placeholder{
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.numeroEnderecoDigitar:focus {
+outline: none;
+border-color: #84053C;
+}
+
+.complementoEndereco {
+display: flex;
+gap: 16px;
+margin-bottom: 16px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 126.671px;
+}
+
+.complementoEnderecoDigitar {
+width: 340px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1.5px solid #D70862; 
+border-radius: 10px; 
+background-color: transparent;
+color: #D70862;
+box-sizing: border-box;
+font-family: 'Montserrat';
+color: var(--rose-700, #84053C);
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+}
+
+.complementoEnderecoDigitar::placeholder{
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.complementoEnderecoDigitar:focus {
+outline: none;
+border-color: #84053C;;
+}
+
+.linhaEndereco {
+display: flex;  
+gap: 16px;
+}
+
+.ncLinha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.linhaEndereco2 {
+  display: flex;
+  gap: 16px; 
+}
+
+.ncLinha2 {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.preenchimentoManual {
+color: var(--rose-800, #4B0222);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.estadoEndereco {
+display: block;
+margin-bottom: 16px;
+width: 126.671px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.estadoEnderecoDigitar {
+width: 340px;
+padding: 15px;
+appearance: none;
+align-items: center;
+gap: 10px;
+background-color: transparent;
+border-radius: 8px;
+color: #4B0222;
+color: var(--rose-700, #84053C);
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+
+/*seta personalizada*/
+appearance: none;
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2384053C' stroke-width='1.5'><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25L12 15.75 4.5 8.25'/></svg>");
+background-size: 20px;
+background-repeat: no-repeat;
+background-position: right 12px center;
+padding: 18px 40px 18px 24px; 
+border: 1.5px solid #D70862;
+border-radius: 10px;
+color: #84053C;
+
+
+.estadoEndereçoDigitar option {
+background-color: #FF398F;
+color: #4B0222;
+}
+}
+
+
+
+.estadoEnderecoDigitar::placeholder{
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.estadoEnderecoDigitar:focus {
+outline: none;
+border-color: #84053C;;
+}
+
+.cidadeEndereco {
+display: block;
+margin-bottom: 16px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 126.671px;
+}
+
+.cidadeEnderecoDigitar {
+width: 340px;
+padding: 18px 40px 18px 24px; 
+margin-bottom: 20px;
+border: 1.5px solid #D70862; 
+border-radius: 10px; 
+background-color: transparent;
+color: #D70862;
+box-sizing: border-box;
+font-family: 'Montserrat';
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.cidadeEnderecoDigitar::placeholder{
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.cidadeEnderecoDigitar:focus {
+outline: none;
+border-color: #84053C;;
+}
+
+.ruaLogradouro {
+display: block;
+margin-bottom: 16px;
+color: var(--rose-700, #84053C);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 126.671px;
+}
+
+.ruaLogradouroDigitar {
+width: 340px;
+padding: 15px;
+margin-bottom: 20px;
+border: 1.5px solid #D70862; 
+border-radius: 10px; 
+background-color: transparent;
+color: #D70862;
+box-sizing: border-box;
+font-family: 'Montserrat';
+color: var(--rose-700, #84053C);
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.ruaLogradouroDigitar::placeholder{
+opacity: 1;
+color: var(--rose-700, #84053C);
+}
+
+.ruaLogradouroDigitar:focus {
+outline: none;
+border-color: #84053C;;
+}
+
+.buttonContinuar {
+background-color: black;
+color: var(--rose-100, #f9f9f9);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+display: inline-flex;
+padding: 18px 56px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid var(--rose-50, #000000);
+box-shadow: 4px 4px 64px 2px rgba(255, 143, 143, 0.92);
+display: block;
+}
+
+.buttonContinuar:focus {
+border-color: #84053C;;
+outline: none;
+}
+
+.rosacadastro {
+    position: fixed; 
+    bottom: 0px;  
+    right: -0.4px;   
+    width:  398.963px;   
+    height: auto;   
+    rotate: -1deg;
+    transform: rotate(0deg); 
+    z-index: 999; 
+    pointer-events: none; 
+
+
+}
+
+

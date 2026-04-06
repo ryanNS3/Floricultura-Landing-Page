@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.menu-body {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+.cabeca-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 80px;
+    z-index: 1000;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.logo-texto {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 50px; 
+}
+
+.menu-item {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.menu-function {
+    text-decoration: none;
+    color: #444;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    
+}
+
+.menu-function.active {
+    color: #ff4d6d;
+}
+
+.menu-function.active ::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 19px;
+    height: 6px;
+    background: #F6607D;
+    z-index: 5;  
+    
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrinhoIcon, .loginIcon {
+    width: 24px;
+    cursor: pointer;
+    display: block;
+}
