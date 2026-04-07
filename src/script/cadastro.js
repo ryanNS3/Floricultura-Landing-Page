@@ -37,7 +37,7 @@ if(form){
 
 
 
-    window.location.href = "./cadastresesenha.html";
+    window.location.href = "./cadastrosenha.html";
 });
 }
 
@@ -47,11 +47,17 @@ if(formSegundo){
 formSegundo.addEventListener('submit', (e) => {
     e.preventDefault(); 
 
-    const senha = document.querySelector('#senhaUsuarioDigitar').value;
+    const senha = document.querySelector('#senhaDigitar').value;
+    const senhaValidar = document.querySelector('#repeticaoSenhaDigitar').value;
+
+    while (senha !== senhaValidar) {
+      alert("As senhas não coincidem. Por favor, tente novamente.");
+      return;
+    }
 
     salvarAndamento({ senha });
 
-    window.location.href = "./cadastresedados.html";
+    window.location.href = "./cadastroendereco.html";
    
 });
 }
@@ -64,7 +70,7 @@ formTerceiro.addEventListener('submit', (e) => {
 
 
     const cep = document.querySelector('#cepUsuarioDigitar').value;
-    const endereço = document.querySelector('#numeroEnderecoDigitar').value;
+    const numero = document.querySelector('#numeroEnderecoDigitar').value;
     const complemento = document.querySelector('#complementoEnderecoDigitar').value;
     const estado = document.querySelector('#estadoEnderecoDigitar').value;
     const cidade = document.querySelector('#cidadeEndereco').value;
@@ -73,7 +79,7 @@ formTerceiro.addEventListener('submit', (e) => {
 
     salvarAndamento({
       cep,
-      numeroEndereco,
+      numero,
       complemento,
       estado,
       cidade,
@@ -85,7 +91,7 @@ formTerceiro.addEventListener('submit', (e) => {
     const lista = JSON.parse(localStorage.getItem("cadastros") || "[]");
     console.log("Cadastros salvos:", lista);
 
-    window.location.href = "./login.html";
+    window.location.href = "./cadastroendereco2.html";
 
 
    
