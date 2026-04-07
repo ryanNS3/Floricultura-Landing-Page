@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/CRMProdutos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style/CRMCriarProduto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="menu-principal">
+        <div class="menu-logo">CRM</div>
+        
+        <label for="pesquisar" class="barra-busca">
+            <div class="circulo-icone-busca">
+                <img src="/img/search.svg" alt="lupa">
+            </div>
+            <input id="pesquisar" type="text" placeholder="BUSCAR" class="campo-digitacao">
+        </label>
+
+        <div class="area-usuario">
+            <button class="botao-notificacao">
+                <img src="/img/notifications.svg" alt="Notificação">
+            </button>
+            <div class="foto-perfil-circulo">
+                <img src="/img/user.png" alt="Usuário">
+            </div>
+        </div>
+    </header>
+
+
+    <main id="pagina-produtos-box">
+        <aside>
+            <nav class="sidebar">
+                <ul class="navegacao">
+                    <li><a href="CRMTela.html"> <!--INICIO -->
+                        <img src="/img/barraLateral1.png" alt="Início" class="IconeCRM">
+                        </a>
+                    </li>
+
+                    <li><a href="#"> <!--Relatórios -->
+                        <img src="/img/barraLateral2.png" alt="Relatórios" class="IconeCRM">
+                        </a>
+                    </li>
+
+                    <li><a href="#"> <!--Configurações-->
+                        <img src="/img/barraLateral3.png" alt="Configurações" class="IconeCRM">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="inner-page-crm" aria-labelledby="titulo-produtos">
+            <div>
+                <div class="titulo-subtitulo-pagina">
+                    <h1 id="titulo-produtos">Criar Produtos</h1>
+                    <p>Lista de produtos disponíveis.</p>
+                </div>
+
+                <form id="box-formulario" action="">
+
+                    <label id="box-input-image">
+                        <!-- <input type="image" class="upload-imagem"> -->
+                        <div id="inner-input-image"> 
+                            <img src="/img/upload-image.svg" alt="">
+                            <p>Upload de imagem</p>
+                        </div>
+                    </label>
+
+                    <div>
+                        <h2>Dados do produto:</h2>
+                        <div class="inner-forms">
+                            <div>
+                                <div class="dois-inputs">
+                                    <label class="input-lable" for="nome-produto">Nome
+                                        <input class="input-field"  type="text" id="nome-produto" placeholder="Nome do produto">
+                                    </label>
+
+                                    <label class="input-lable" for="nome-produto">Quantidade
+                                        <input class="input-field"  type="number" id="nome-produto" placeholder="10">
+                                    </label>
+                                </div>
+
+                                <label class="input-lable" for="nome-produto">Preço
+                                        <input class="input-field"  type="number" id="nome-produto" placeholder="R$3,90">
+                                </label>
+
+                            </div>
+                            
+                            <button type="button" class="btn-entrar" id="botaoLogin">ADICIONAR PRODUTO</button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
