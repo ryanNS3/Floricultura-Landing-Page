@@ -1,0 +1,67 @@
+#box-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+
+}
+
+
+#box-input-image{
+    display: flex;
+
+height: 411px;
+justify-content: center;
+align-items: center;
+
+border-radius: 8px;
+border: 2px dashed #949494;
+}
+
+.input-lable{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #151515;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dois-inputs{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    margin-top: 24px;
+    flex: 1;
+    margin-bottom: 28px;
+}
+.input-field{
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    padding: 18px 24px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 2px solid #B2B2B2;
+}
+
+.input-field::focus{
+    border-radius: 8px;
+border: 2px solid #FF398F;
+box-shadow: 4px 4px 16px 0 #FF398F;
+}
+
+.inner-forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+}
+
+.btn-entrar{
+    place-self: start;
+}
