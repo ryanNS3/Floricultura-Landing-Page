@@ -3,26 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/CRMProdutos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="CRMTela.html">CRM Tela</a></li>
-                <li><a href="CRMRelatorio.html">CRM Relatório</a></li>
-            </ul>
-        </nav>
+<header class="menu-principal">
+        <div class="menu-logo">CRM</div>
+        
+        <label for="pesquisar" class="barra-busca">
+            <div class="circulo-icone-busca">
+                <img src="/img/search.svg" alt="lupa">
+            </div>
+            <input id="pesquisar" type="text" placeholder="BUSCAR" class="campo-digitacao">
+        </label>
+
+        <div class="area-usuario">
+            <button class="botao-notificacao">
+                <img src="/img/notifications.svg" alt="Notificação">
+            </button>
+            <div class="foto-perfil-circulo">
+                <img src="/img/user.png" alt="Usuário">
+            </div>
+        </div>
     </header>
 
-    <main>
+
+    <main id="pagina-produtos-box">
         <aside>
-            <nav></nav>
+            <nav class="sidebar">
+                <ul class="navegacao">
+                    <li><a href="CRMTela.html"> <!--INICIO -->
+                        <img src="/img/barraLateral1.png" alt="Início" class="IconeCRM">
+                        </a>
+                    </li>
+
+                    <li><a href="#"> <!--Relatórios -->
+                        <img src="/img/barraLateral2.png" alt="Relatórios" class="IconeCRM">
+                        </a>
+                    </li>
+
+                    <li><a href="#"> <!--Configurações-->
+                        <img src="/img/barraLateral3.png" alt="Configurações" class="IconeCRM">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-        <section>
-            <h1>Produtos</h1>
+        <section class="inner-page-crm" aria-labelledby="titulo-produtos">
+            <div class="header-section-page">
+                <div class="titulo-subtitulo-pagina">
+                    <h1 id="titulo-produtos">Produtos</h1>
+                    <p>Lista de produtos disponíveis.</p>
+                </div>
+                <button type="button" class="btn-entrar" id="botaoLogin">ADICIONAR</button>
+
+            </div>
+
+            <ul id="lista-produtos" aria-label="Lista de produtos">
+
+                 <li class="card-produto">
+                   <div>
+                        <div>
+                        <h2>Flores</h2>
+                        <h3>Rosas</h3>
+                    </div>
+                    <button class="botao-ver-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+                        <circle cx="33" cy="33" r="32.5" fill="#D9D9D9" fill-opacity="0.19" stroke="#ECECEC"/>
+                        <path d="M42 23C42 22.4477 41.5523 22 41 22L32 22C31.4477 22 31 22.4477 31 23C31 23.5523 31.4477 24 32 24L40 24L40 32C40 32.5523 40.4477 33 41 33C41.5523 33 42 32.5523 42 32L42 23ZM23 41L23.7071 41.7071L41.7071 23.7071L41 23L40.2929 22.2929L22.2929 40.2929L23 41Z" fill="black"/>
+                        </svg>
+                    </button>
+                   </div>
+                    
+                    
+                 <img class="product-image" src="../img/rosa.png" alt="">
+
+                </li>
+
+
+                 <li class="card-produto">
+                   <div>
+                        <div>
+                        <h2>Flores</h2>
+                        <h3>Rosas</h3>
+                    </div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.7072 0.999999C19.7072 0.447715 19.2594 -4.87623e-07 18.7072 -7.40504e-07L9.70715 6.02864e-08C9.15487 -2.76888e-07 8.70715 0.447715 8.70715 1C8.70715 1.55228 9.15487 2 9.70715 2L17.7072 2L17.7072 10C17.7072 10.5523 18.1549 11 18.7072 11C19.2594 11 19.7072 10.5523 19.7072 10L19.7072 0.999999ZM0.707153 19L1.41426 19.7071L19.4143 1.70711L18.7072 1L18 0.292893L4.65512e-05 18.2929L0.707153 19Z" fill="black"/>
+                        </svg>
+                    </button>
+                   </div>
+                    
+                    
+                 <img class="product-image" src="../img/rosa.png" alt="">
+
+                </li>
+
+
+
+                 <li class="card-produto">
+                   <div>
+                        <div>
+                        <h2>Flores</h2>
+                        <h3>Rosas</h3>
+                    </div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.7072 0.999999C19.7072 0.447715 19.2594 -4.87623e-07 18.7072 -7.40504e-07L9.70715 6.02864e-08C9.15487 -2.76888e-07 8.70715 0.447715 8.70715 1C8.70715 1.55228 9.15487 2 9.70715 2L17.7072 2L17.7072 10C17.7072 10.5523 18.1549 11 18.7072 11C19.2594 11 19.7072 10.5523 19.7072 10L19.7072 0.999999ZM0.707153 19L1.41426 19.7071L19.4143 1.70711L18.7072 1L18 0.292893L4.65512e-05 18.2929L0.707153 19Z" fill="black"/>
+                        </svg>
+                    </button>
+                   </div>
+                    
+                    
+                 <img class="product-image" src="../img/rosa-saturacao.png" alt="">
+
+                </li>
+
+
+
+                 <li class="card-produto">
+                   <div>
+                        <div>
+                        <h2>Flores</h2>
+                        <h3>Rosas</h3>
+                    </div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.7072 0.999999C19.7072 0.447715 19.2594 -4.87623e-07 18.7072 -7.40504e-07L9.70715 6.02864e-08C9.15487 -2.76888e-07 8.70715 0.447715 8.70715 1C8.70715 1.55228 9.15487 2 9.70715 2L17.7072 2L17.7072 10C17.7072 10.5523 18.1549 11 18.7072 11C19.2594 11 19.7072 10.5523 19.7072 10L19.7072 0.999999ZM0.707153 19L1.41426 19.7071L19.4143 1.70711L18.7072 1L18 0.292893L4.65512e-05 18.2929L0.707153 19Z" fill="black"/>
+                        </svg>
+                    </button>
+                   </div>
+                    
+                    
+                 <img class="product-image" src="../img/rosa.png" alt="">
+
+                </li>
+            </ul>
+
+
         </section>
     </main>
     
